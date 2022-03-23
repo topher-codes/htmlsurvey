@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>survey</title>
+</head>
+<body>
+  <div class="container">
+    <header class="text-center">
+      <h1 id="title">Survey Time!</h1>
+      <p id="description">If you would like to help me figure some stuff out, take this survey please!</p>
+    </header>
+
+    <form action="post" id="survey-form">
+      <div class="form-control">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" name="name" id="name" placeholder="Name...">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email...">
+        <label for="number" id="number-label">Number</label>
+        <input type="number" name="number" id="number" placeholder="Number..." min>
+        <br>
+        <p>What is your current status?</p>
+        <select name="dropdown" id="dropdown" required>
+          <option disabled selected value>Pick One</option>
+          <option value="single">Single</option>
+          <option value="inarelationship">In a relationship</option>
+          <option value="else">Something else</option>
+        </select>
+        <br>
+        <p>Are you currently happy with your status?</p>
+        <label><input type="radio" name="happy"> Happy</label>
+        <label><input type="radio" name="neutral"> Neutral</label>
+        <label><input type="radio" name="sad"> Sad</label>
+
+        <p>What sort of things are you doing for yourself lately?</p>
+        <label><input type="checkbox" name="excercise" value="excercise"> Excercise</label>
+        <label><input type="checkbox" name="eating" value="eating"> Eating Healthy</label>
+        <label><input type="checkbox" name="learning" value="learning"> Learning Something New</label>
+        <label><input type="checkbox" name="exploring" value="exploring"> Exploring Community / Nature</label>
+        <br>
+        <p>Additional Comments or Questions</p>
+        <textarea name="comments" id="comments" rows="10" placeholder="Comments..."></textarea>
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
